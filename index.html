@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/yqg.jpg" alt="Yingqi Gao" width="180">
+          <img src="./assets/images/yqg.jpg" alt="Yingqi Gao">
         </figure>
 
         <div class="info-content">
@@ -50,10 +50,10 @@
 
           <p class="title">Ph.D. Student</p>
           <a href="http://statistics.ucla.edu/" class="info-link">Department of Statistics & Data Science</a>
-          <a href="https://www.ucla.edu/" class="info-link">University of California, Los Angeles (UCLA)</a>
+          <a href="https://www.ucla.edu/" class="info-link">University of California, Los Angeles</a>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" data-sidebar-btn onclick="this.blur();">
           <span>Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
@@ -118,23 +118,25 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link onclick="this.blur();">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>CV</button>
+            <button class="navbar-link" data-nav-link onclick="location.href='assets/pdf/cv.pdf'">CV</button>
           </li>
 
+          <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Research</button>
           </li>
+          -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Teaching</button>
+            <button class="navbar-link" data-nav-link onclick="this.blur();">Teaching</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Courses</button>
+            <button class="navbar-link" data-nav-link onclick="this.blur();">Courses</button>
           </li>
 
         </ul>
@@ -149,7 +151,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -158,22 +160,26 @@
         <section class="about-text">
           <p>
             Hi, I am a third-year Ph.D. student in the <a href="http://statistics.ucla.edu/" class="link">Department of Statistics & Data Science</a> 
-            at <a href="https://www.ucla.edu/" class="link">UCLA</a>. I am also a member in the 
+            at <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. I am also a member in the 
             <a href="https://www.xiaowudai.org/group" class="link">Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)</a>, 
-            supervised by <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>. 
+            supervised by my wonderful advisor <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>. 
           </p>
 
           <p>
             Prior to the Ph.D. program, I received two Bachelors of Science degrees respectively in Probability & Statistics and Management Science 
             at <a href="https://ucsd.edu/" class="link">Univeristy of California, San Diego (UCSD)</a>, along with a Master of Arts degree in Statistics
-            at <a href="https://www.columbia.edu/" class="link">Columbia Univeristy in the City of New York</a> fortunately advised by 
+            at <a href="https://www.columbia.edu/" class="link">Columbia Univeristy in the City of New York (Columbia)</a> fortunately advised by 
             <a href="https://stat.columbia.edu/webpages/msobel/" class="link">Prof. Michael E. Sobel</a>.
           </p>
 
           <p>
-            My research interests are in the interdisciplinarity of economics and machine learning. I am currently focused on refining and developing 
-            mechanisms tailored to the prevalence of machine learning algorithms in economy, such as data pricing and trading. 
-            I am also passionate about the opposite direction, which is to integrate economic ideas in machine learning model improvements.
+            My research interests are in the <b>interdisciplinarity of Machine Learning and Economics</b>. 
+            I am currently focused on refining and developing mechanisms tailored to the economy of machine learning-related products, such as data pricing and trading. 
+            I am also passionate about the opposite direction, which is to integrate economic concepts into machine learning model design.
+          </p>
+          
+          <p>
+            My first name is pronounced as <i>yuhng-chee</i>.
           </p>
         </section>
 
@@ -182,51 +188,20 @@
           - service
         -->
 
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="cash-outline"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Repeated ML Data Auctions</h4>
-
-                <p class="service-item-text">
-                  Utilize repeated auctions to maximize a data monopolist's long-term revenue with a steeady stream of interested buyers.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="git-network-outline"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Network Identification & Estimation</h4>
-
-                <p class="service-item-text">
-                  Identify profiles of current group members from existing cross-group connections, 
-                  and predict for other potential cross-group connections. 
-                </p>
-              </div>
-
-            </li>
+         <section class="service">
+          <h3 class="h3 service-title">Recent Research Endeavors</h3>
+          <ul class="about-text">
+            <li>Machine learning data market design</li>
           </ul>
         </section>
 
         <section class="service">
           <h3 class="h3 service-title">News & Awards</h3>
           <ul class="about-text">
-            <li></li>
+            <li>Division of Graduate Education (DGE) Block Grant, UCLA, 2023</li>
+            <li>Recipient of the Statistics Department Chair’s List of Academic Achievements, Columbia, 2020</li>
+            <li>JSM 2020 Registration Award, Columbia, 2020</li>
+            <li>BS magna cum laude in Management Science, UCSD, 2019</li>
           </ul>
         </section>
 
@@ -254,75 +229,6 @@
 
         
       </article>
-
-
-
-
-
-      <!--
-        - #CV
-      -->
-
-      <article class="resume" data-page="cv">
-
-        <header>
-          <h2 class="h2 article-title">CV</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of California, Los Angeles (UCLA)</h4>
-
-              <span>Sep 2021 - Present </span>
-
-              <p class="timeline-text">
-                Ph.D. in Statistics & Data Science.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Columbia University in the City of New York</h4>
-
-              <span>Sep 2019 — Dec 2020</span>
-
-              <p class="timeline-text">
-                M.A. in Statistics.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of California, San Diego (UCSD)</h4>
-
-              <span>Sep 2015 — Jun 2019</span>
-
-              <p class="timeline-text">
-                B.S. in Management Science, B.S. in Probability & Statistics.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
 
 
 
@@ -571,74 +477,186 @@
         - #TEACHING
       -->
 
-      <article class="resume" data-page="teaching">
-
+      <article class="about" data-page="teaching">
         <header>
           <h2 class="h2 article-title">Teaching</h2>
         </header>
-        <section class="timeline">
+        <!--
+          - service
+        -->
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of California, Los Angeles (UCLA)</h4>
-
-              <span>Sep 2021 - Present </span>
-
-              <p class="timeline-text">
-                Ph.D. in Statistics & Data Science.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Columbia University in the City of New York</h4>
-
-              <span>Sep 2019 — Dec 2020</span>
-
-              <p class="timeline-text">
-                M.A. in Statistics.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of California, San Diego (UCSD)</h4>
-
-              <span>Sep 2015 — Jun 2019</span>
-
-              <p class="timeline-text">
-                B.S. in Management Science, B.S. in Probability & Statistics.
-              </p>
-
-            </li>
-
-          </ol>
-
+         <section class="service">
+          <h3 class="h3 service-title">Courses TA'd</h3>
+          <ul class="about-text">
+            <li>Spring 2024: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Hao Ho.</li>
+            <li>Fall 2023: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Dale S. Kim.</li>
+            <li>Summer 2023: STATS 10 <i>Introduction to Statistical Reasoning</i> with Kaiwen Jiang.</li>
+            <li>Fall 2022 - Spring 2023, Winter 2024: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Bingling Wang.</li>
+            <li>Summer 2022: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Michael Tsiang.</li>
+            <li>Spring 2022: STATS 20 <i>Introduction to Statistical Programming with R</i> with Dr. Vivian Lew. </li>
+            <li>Summer 2021: STAT S1201 <i>Calculus Based Introduction to Statistics</i> with Prof. David Rios at Columbia.</li>
+          </ul>
         </section>
 
+        <section class="service">
+          <h3 class="h3 service-title">Reviews from Evaluation of Instruction Reports</h3>
+          <ul class="about-text">
+            <li>
+              "TA had a really good understanding of the material and could answer any question extremely well 
+              and was in general very helpful."
+            </li>
+            <li>
+              "I only have a year in UCLA and I can say without a doubt that Yingqi, by far, 
+              has been the best TA I have had! 
+              Coming into this course, I was nervous about the workload since there is a lot to cover in so little time 
+              but Yingqi is a very talented and knowledgeable professional and has made it so much easier. 
+              She has made this class very manageable, not to mention how on-point her discussions are, 
+              as well as the time she takes to pause and asks us for any questions we may have and 
+              she is also willing to meet with students after discussion to resolve any conflicts we may have encountered. 
+              You can truly see when someone cares about their profession, Yingqi emobies that and so much more. 
+              I am really grateful to have had a TA such as Yingqi."
+            </li>
+            <li>
+              "Ms. Gao is an excellent TA and I greatly appreciate her. Without her I would not only struggle with the class, 
+              but I would have lost out on valuable training of statistical methods for real-world problems. 
+              Before the class, I was terrified at the thought of doing statistical and computational analysis of huge data sets. 
+              Now I feel extremely competent and inspired to learn more about these methods on my own. 
+              I'm even considering a minor in statistics because of Ms. Gao. 
+              I appreciate her so much and she deserves every raise available to TA's."
+            </li>
+            <li>
+              "Yingqi was exceptional in her explanation of concepts and was clear and succinct in her instruction of 
+              the course material. She often went out of her way to connect concepts from the main lecture back into 
+              the lab section, which I found very helpful in understanding the lab material. 
+              She was also very helpful in providing resources after the lab section was over to complete the lab assignments."
+            </li>
+            <li>
+              "Yingqi is a FANTASTIC programming/ stats TA. 
+              She's so sweet and considerate towards her cohort, accommodating us with various resources, recordings, 
+              and extra after-class support. 
+              She's also an amazing teacher who was amazing at simplifying complex concepts. 
+              I would have absolutely despised the programming component of this class had I not been in Yingqi's section!"
+            </li>
+            <li>
+              "Yingqi was very kind and passionate about the material. Whenever I asked questions she would not only give me a response, 
+              but helped me understand why the code was written in a specific way over the other. 
+              Even if there were only a few of us who attended section, she was very inviting and tried to get to know us better."
+            </li>
+            <li>
+              "Yingqi is very approachable, which makes me feel supported and unafraid to ask questions. 
+              She possesses a great amount of knowledge about the course material, and she explains it in a way 
+              that does not further complicate the class material. 
+              In addition, she ensures clear communication with us students, announcing things that we need to know ahead of time. 
+              Overall, Yingqi's clear explanations and communication skills have been a great asset to our class.""
+            </li>
+            <li>
+              "This TA was sweet and helpful. I did join the course a week late and she made sure I felt on track. 
+              If anything was left unclear she always made sure to clear things out I really really appreciate that. 
+              This TA always shared new knowledge with us and we always left learning something new."
+            </li>
+            <li>
+              "This TA was so kind and helpful at all times. Even though she obviously had a busy personal life, 
+              she always made time for the class and made recordings whenever there wasn't section to help us on the labs. 
+              It was such a joy to be in her discussion. Her pace was very fast, but it was necessary to get through all the content, 
+              and she was always responsive to emails and was willing to meet outside of section and her office hours if needed. 
+              She never gave up on me if I had an issue, even if it was complicated. 
+              She was a bright energy in section which I think created a comforting environment for a subject 
+              that I was really worried I would struggle with."
+            </li>
+            <li>
+              "Yingqi was a great and well rounded TA. She really went above and beyond when it came to supporting us in doing labs. 
+              She is clearly very knowledgeable and is quick to address any concerns that I might have regarding R or material covered in lecture. 
+              I have nothing but praise for her as a TA. She was awesome and I would definitely take her section again if given the chance!"
+            </li>
+          </ul>
+        </section>
 
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+        
       </article>
+        
 
 
       <!-- 
         - #COURSES 
       -->
-      <article class="courses" data-page="courses">
+            <article class="about" data-page="courses">
         <header>
           <h2 class="h2 article-title">Courses</h2>
         </header>
+        <section class="about-text">
+        <p>
+          Here is a selected list of graduate-level classes I have completed that are relevant to my research:
+        </p>
+        </section>
+        <!--
+          - service
+        -->
+         <section class="service">
+          <h3 class="h3 service-title">Statistics @UCLA</h3>
+          <ul class="about-text">
+            <li>Spring 2024: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Hao Ho.</li>
+            <li>Fall 2023: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Dale S. Kim.</li>
+            <li>Summer 2023: STATS 10 <i>Introduction to Statistical Reasoning</i> with Kaiwen Jiang.</li>
+            <li>Fall 2022 - Spring 2023, Winter 2024: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Bingling Wang.</li>
+            <li>Summer 2022: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Michael Tsiang.</li>
+            <li>Spring 2022: STATS 20 <i>Introduction to Statistical Programming with R</i> with Dr. Vivian Lew. </li>
+            <li>Summer 2021: STAT S1201 <i>Calculus Based Introduction to Statistics</i> with Prof. David Rios at Columbia.</li>
+          </ul>
+        </section>
+        
+        <section class="service">
+          <h3 class="h3 service-title">Statistics @UCLA</h3>
+          <ul class="about-text">
+            <li>Spring 2024: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Hao Ho.</li>
+            <li>Fall 2023: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Dale S. Kim.</li>
+            <li>Summer 2023: STATS 10 <i>Introduction to Statistical Reasoning</i> with Kaiwen Jiang.</li>
+            <li>Fall 2022 - Spring 2023, Winter 2024: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Bingling Wang.</li>
+            <li>Summer 2022: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Michael Tsiang.</li>
+            <li>Spring 2022: STATS 20 <i>Introduction to Statistical Programming with R</i> with Dr. Vivian Lew. </li>
+            <li>Summer 2021: STAT S1201 <i>Calculus Based Introduction to Statistics</i> with Prof. David Rios at Columbia.</li>
+          </ul>
+        </section>
+
+        
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+        
       </article>
 
 

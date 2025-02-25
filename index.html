@@ -3,680 +3,264 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yingqi Gao's Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">  -->
-
-  <!--
-    - custom css link
-  -->
+  <title>Yingqi's Portfolio</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/yqg.jpg" alt="Yingqi Gao">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Yingqi Gao">Yingqi Gao</h1>
-
-          <p class="title">Ph.D. Student</p>
-          <a href="http://statistics.ucla.edu/" class="info-link">Department of Statistics & Data Science</a>
-          <a href="https://www.ucla.edu/" class="info-link">University of California, Los Angeles</a>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-left">
+        <img src="./assets/images/yqg.jpg" alt="Yingqi" class="profile-pic">
+        <div class="sidebar-name">Yingqi Gao</div>
+      </div>
+      <div class="sidebar-right">
+        <div class="sidebar-title"> 
+          Ph.D. Candidate,<br> 
+          Statistics & Data Science,<br> 
+          University of California,<br>
+          Los Angeles (UCLA).
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn onclick="this.blur();">
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <!-- Contact Links -->
+        <div class="sidebar-contact">
+          <div>
+              <a href="assets/pdf/cv.pdf" target="_blank" class="contact-item">
+                <img src="assets/images/cv.png" alt="Resume" class="contact-icon">
+              </a>
+              <p class="contact-label">Resume</p>
+          </div>
+      
+          <div>
+              <a href="https://www.linkedin.com/in/yingqi-gao/" target="_blank" class="contact-item">
+                  <img src="assets/images/linkedin.png" alt="LinkedIn" class="contact-icon">
+              </a>
+              <p class="contact-label">LinkedIn</p>
+          </div>
+      
+          <div>
+              <a href="https://github.com/yingqi-gao" target="_blank" class="contact-item">
+                  <img src="assets/images/github.png" alt="GitHub" class="contact-icon">
+              </a>
+              <p class="contact-label">GitHub</p>
+          </div>
+      
+          <div>
+              <a href="mailto:yqg36@ucla.edu" class="contact-item">
+                <img src="assets/images/email.png" alt="Email" class="contact-icon">
+              </a>
+              <p class="contact-label">Email</p>
+          </div>
+        </div>
+        <!-- Explicit Email for Copy-Pasting -->
+        <div class="sidebar-email">
+          <p>
+            If the email button does not work, copy:<br>
+            <strong>yqg36@ucla.edu</strong>
+          </p>
+        </div>
       </div>
+    </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <a href="mailto:yqg36@g.ucla.edu" class="icon-link"><ion-icon name="mail-outline"></ion-icon></a>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:yqg36@g.ucla.edu" class="contact-link">yqg36@g.ucla.edu</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <a href="https://github.com/yingqi-gao" class="icon-link"><ion-icon name="logo-github"></ion-icon></a>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-
-              <a href="https://github.com/yingqi-gao" class="contact-link">yingqi-gao</a>
-            </div>
-
-          </li>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- Main Content -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
+      <!-- About Me Section -->
+      <section id="about" class="content-section"> <!-- Default visible -->
+        <h2>About me</h2>
+        <div class="curly-divider"></div>
+        <p>
+          Hi, I am a fourth-year Ph.D. candidate in the 
+          <a href="http://statistics.ucla.edu/" class="link">Department of Statistics & Data Science</a> 
+          at <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. 
+          I am a member of the 
+          <a href="https://www.xiaowudai.org/group" class="link">
+            Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)
+          </a>
+          , advised by <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>.
+        </p>
 
-      <nav class="navbar">
+        <p>
+          Prior to my Ph.D., I earned two Bachelor of Science degrees in Probability & Statistics and Management Science 
+          at <a href="https://ucsd.edu/" class="link">University of California, San Diego (UCSD)</a>, 
+          as well as a Master of Arts in Statistics at 
+          <a href="https://www.columbia.edu/" class="link">Columbia University</a>, 
+          where I was advised by 
+          <a href="https://stat.columbia.edu/webpages/msobel/" class="link">Prof. Michael E. Sobel</a>.
+        </p>
 
-        <ul class="navbar-list">
+        <p>
+          My research lies at the <b>intersection of Machine Learning and Economics</b>, focusing on:<br>
+          (1) <b>Market-driven mechanisms</b> that enable intelligent decision-making and 
+          fair resource allocation <b>in digital economies</b>, such as <b>data markets and privacy trading</b>, 
+          giving users control over their data instead of passively surrendering it.<br>
+          (2) <b>AI systems that reason, adapt, and respond to economic incentives</b>, 
+          ensuring they operate efficiently in environments shaped by human behavior and strategic interactions,
+          like <b>LLM-powered ads auctions and retrieval-based uncertainty quantification</b>.
+        </p>
+        
+        <p>
+          My first name is pronounced as <i>Yee-ung-Chee</i>.
+        </p>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link onclick="this.blur();">About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link onclick="location.href='assets/pdf/cv.pdf'">CV</button>
-          </li>
-
-          <!--
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Research</button>
-          </li>
-          -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link onclick="this.blur();">Teaching</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link onclick="this.blur();">Courses</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hi, I am a third-year Ph.D. student in the <a href="http://statistics.ucla.edu/" class="link">Department of Statistics & Data Science</a> 
-            at <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. I am also a member in the 
-            <a href="https://www.xiaowudai.org/group" class="link">Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)</a>, 
-            supervised by my wonderful advisor <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>. 
-          </p>
-
-          <p>
-            Prior to the Ph.D. program, I received two Bachelors of Science degrees respectively in Probability & Statistics and Management Science 
-            at <a href="https://ucsd.edu/" class="link">Univeristy of California, San Diego (UCSD)</a>, along with a Master of Arts degree in Statistics
-            at <a href="https://www.columbia.edu/" class="link">Columbia Univeristy in the City of New York (Columbia)</a> fortunately advised by 
-            <a href="https://stat.columbia.edu/webpages/msobel/" class="link">Prof. Michael E. Sobel</a>.
-          </p>
-
-          <p>
-            My research interests are in the <b>interdisciplinarity of Machine Learning and Economics</b>. 
-            I am currently focused on refining and developing mechanisms tailored to the economy of machine learning-related products, such as data pricing and trading. 
-            I am also passionate about the opposite direction, which is to integrate economic concepts into machine learning model design.
-          </p>
-          
-          <p>
-            My first name is pronounced as <i>yuhng-chee</i>.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-         <section class="service">
-          <h3 class="h3 service-title">Recent Research Endeavors</h3>
-          <ul class="about-text">
-            <li>Machine learning data market design</li>
-          </ul>
-        </section>
-
-        <section class="service">
-          <h3 class="h3 service-title">News & Awards</h3>
-          <ul class="about-text">
+        <div class="orange-divider"></div>
+        <h3>Grants</h3>
+        <ul class="about-text">
             <li>Division of Graduate Education (DGE) Block Grant, UCLA, 2023</li>
             <li>Recipient of the Statistics Department Chair’s List of Academic Achievements, Columbia, 2020</li>
             <li>JSM 2020 Registration Award, Columbia, 2020</li>
             <li>BS magna cum laude in Management Science, UCSD, 2019</li>
           </ul>
-        </section>
+      </section>
 
+      <!-- Research Section -->
+      <section id="research" class="content-section" style="display: none;">
+        <h2>Research</h2>
+        <div class="curly-divider"></div>
+        <p>
+          My research explores the <b>two-way interaction between AI and economic systems</b>, 
+          focusing on (1) how AI can improve economic decision-making and 
+          (2) how economic principles can shape AI-driven markets. 
+        </p>
+        <p>
+          As digital assets like data, privacy, and AI-generated content become more valuable, 
+          traditional markets must adapt. I develop mechanisms that enable efficient trade while ensuring fairness, 
+          privacy, and strategic incentives. Currently, I am designing <b>fair yet profitable data marketplaces</b>, 
+          ensuring efficient trading mechanisms while aligning incentives for buyers and sellers. 
+          Looking ahead, I aim to develop <b>a privacy market</b> where users can dynamically control their 
+          data exposure—like turning a knob—balancing privacy protection with economic incentives. 
+        </p>
+        <p>
+          At the same time, I study how <b>AI can integrate economic reasoning to make better decisions
+          under uncertainty</b>.
+          For example, retrieval-based AI can improve predictive reliability by drawing on external knowledge. 
+          In <b>healthcare</b>, this could mean retrieving past diagnoses made by human professionals 
+          from similar cases to assess uncertainty in a new diagnosis, ensuring AI-generated recommendations 
+          are not only data-driven but also grounded in real-world medical expertise. 
+          Similarly, in <b>AI-powered chatbots</b>, this goes beyond simply listing the sources
+          —it involves statistically interpreting those sources to quantify the credibility of an answer. 
+        </p>
+        <p>
+          A related concept has been explored in <b>ad auctions</b>, 
+          where large language models incorporate bidding mechanisms to optimize AI-generated ad placement. 
+          I aim to expand this idea by <b>introducing an economic interpretation of AI-generated value</b>, 
+          ensuring that outcomes align with market incentives. For instance, if someone bids $100, 
+          the AI-generated ad should deliver at least proportionally greater value compared to a $10 bid. 
+          Embedding this principle enhances fairness, reinforces incentives, and strengthens trust in AI-driven markets.
+        </p>
+        <p>
+          Ultimately, I seek to build <b>scalable, inference-driven AI systems</b> that go 
+          beyond processing information to <b>actively reason, adapt, and make economically sound decisions</b>
+          in complex marketplaces shaped by human behavior and strategic interactions.
+          By integrating <b>statistical reasoning to assess uncertainty</b> and 
+          <b>economic principles to ensure fairness and incentives</b>, 
+          my work seeks to create AI-driven markets that are both <b>efficient and trustworthy</b>. 
+          From (1) data markets to (2) privacy trading, 
+          where users control their exposure instead of passively surrendering data,
+          to (3) LLM-powered ad auctions and (4) retrieval-based decision-making, 
+          I strive to build systems that bridge AI intelligence with economic insight, 
+          fostering <b>transparent, adaptable, and value-aligned AI interactions</b>.
+        </p>
+      </section>
 
+      
 
+      <section id="grants" class="content-section" style="display: none;">
+        <h2>Grants</h2>
+        <div class="curly-divider"></div>
+        <p>Funding sources for my research...</p>
+      </section>
+    
+      
 
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div>
-
-
-        
-      </article>
-
-
-
-
-      <!--
-        - #RESEARCH
-      -->
-
-      <article class="portfolio" data-page="research">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+      <section id="teaching" class="content-section" style="display: none;">
+        <h2>Teaching</h2>
+        <div class="curly-divider"></div>
+        <h3>Courses TA'd</h3>
+          <h4>📍 UCLA</h4>
+          <ul>
+              <li><b>STATS 102B</b> – <i>Introduction to Computation and Optimization for Statistics</i> (Summer 2024)</li>
+              <li><b>STATS 102A</b> – <i>Introduction to Computational Statistics with R</i> (Summer 2024)</li>
+              <li><b>STATS 100A</b> – <i>Introduction to Probability</i> (Fall 2024)</li>
+              <li><b>STATS 20</b> – <i>Introduction to Statistical Programming with R</i> (Spring 2022)</li>
+              <li><b>STATS 13</b> – <i>Introduction to Statistical Methods for Life and Health Sciences</i> (Fall 2023, Spring 2024)</li>
+              <li><b>STATS 10</b> – <i>Introduction to Statistical Reasoning</i> (Summer 2022, Fall 2022, Winter 2023, Spring 2023, Summer 2023, Winter 2024, Winter 2025)</li>
           </ul>
 
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
+          <h4>📍 Columbia University</h4>
+          <ul>
+              <li><b>STAT S1201</b> – <i>Calculus-Based Introduction to Statistics</i> (Summer 2021)</li>
+          </ul>
+        <div class="orange-divider"></div>
+        <h3>What Students Say</h3>
+          <!-- Featured Testimonials -->
+          <div class="testimonial">
+            <p>
+              “Yingqi has been the best TA I have had at UCLA. 
+              She is a talented and knowledgeable professional who made the class manageable and always checked in with students. 
+              Her discussions were on-point, and she was willing to meet with students after class to address difficulties. 
+              You can truly see when someone cares about their profession—Yingqi embodies that and so much more.”
+            </p> 
           </div>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #TEACHING
-      -->
-
-      <article class="about" data-page="teaching">
-        <header>
-          <h2 class="h2 article-title">Teaching</h2>
-        </header>
-        <!--
-          - service
-        -->
-
-         <section class="service">
-          <h3 class="h3 service-title">Courses TA'd</h3>
-          <ul class="about-text">
-            <li>Spring 2024: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Hao Ho.</li>
-            <li>Fall 2023: STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i> with Prof. Dale S. Kim.</li>
-            <li>Summer 2023: STATS 10 <i>Introduction to Statistical Reasoning</i> with Kaiwen Jiang.</li>
-            <li>Fall 2022 - Spring 2023, Winter 2024: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Bingling Wang.</li>
-            <li>Summer 2022: STATS 10 <i>Introduction to Statistical Reasoning</i> with Dr. Michael Tsiang.</li>
-            <li>Spring 2022: STATS 20 <i>Introduction to Statistical Programming with R</i> with Dr. Vivian Lew. </li>
-            <li>Summer 2021: STAT S1201 <i>Calculus Based Introduction to Statistics</i> with Prof. David Rios at Columbia.</li>
-          </ul>
-        </section>
-
-        <section class="service">
-          <h3 class="h3 service-title">Reviews from Evaluation of Instruction Reports</h3>
-          <ul class="about-text">
-            <li>
-              "TA had a really good understanding of the material and could answer any question extremely well 
-              and was in general very helpful."
-            </li>
-            <li>
-              "I only have a year in UCLA and I can say without a doubt that Yingqi, by far, 
-              has been the best TA I have had! 
-              Coming into this course, I was nervous about the workload since there is a lot to cover in so little time 
-              but Yingqi is a very talented and knowledgeable professional and has made it so much easier. 
-              She has made this class very manageable, not to mention how on-point her discussions are, 
-              as well as the time she takes to pause and asks us for any questions we may have and 
-              she is also willing to meet with students after discussion to resolve any conflicts we may have encountered. 
-              You can truly see when someone cares about their profession, Yingqi emobies that and so much more. 
-              I am really grateful to have had a TA such as Yingqi."
-            </li>
-            <li>
-              "Ms. Gao is an excellent TA and I greatly appreciate her. Without her I would not only struggle with the class, 
-              but I would have lost out on valuable training of statistical methods for real-world problems. 
-              Before the class, I was terrified at the thought of doing statistical and computational analysis of huge data sets. 
-              Now I feel extremely competent and inspired to learn more about these methods on my own. 
-              I'm even considering a minor in statistics because of Ms. Gao. 
-              I appreciate her so much and she deserves every raise available to TA's."
-            </li>
-            <li>
-              "Yingqi was exceptional in her explanation of concepts and was clear and succinct in her instruction of 
-              the course material. She often went out of her way to connect concepts from the main lecture back into 
-              the lab section, which I found very helpful in understanding the lab material. 
-              She was also very helpful in providing resources after the lab section was over to complete the lab assignments."
-            </li>
-            <li>
-              "Yingqi is a FANTASTIC programming/ stats TA. 
-              She's so sweet and considerate towards her cohort, accommodating us with various resources, recordings, 
-              and extra after-class support. 
-              She's also an amazing teacher who was amazing at simplifying complex concepts. 
-              I would have absolutely despised the programming component of this class had I not been in Yingqi's section!"
-            </li>
-            <li>
-              "Yingqi was very kind and passionate about the material. Whenever I asked questions she would not only give me a response, 
-              but helped me understand why the code was written in a specific way over the other. 
-              Even if there were only a few of us who attended section, she was very inviting and tried to get to know us better."
-            </li>
-            <li>
-              "Yingqi is very approachable, which makes me feel supported and unafraid to ask questions. 
-              She possesses a great amount of knowledge about the course material, and she explains it in a way 
-              that does not further complicate the class material. 
-              In addition, she ensures clear communication with us students, announcing things that we need to know ahead of time. 
-              Overall, Yingqi's clear explanations and communication skills have been a great asset to our class.""
-            </li>
-            <li>
-              "This TA was sweet and helpful. I did join the course a week late and she made sure I felt on track. 
-              If anything was left unclear she always made sure to clear things out I really really appreciate that. 
-              This TA always shared new knowledge with us and we always left learning something new."
-            </li>
-            <li>
-              "This TA was so kind and helpful at all times. Even though she obviously had a busy personal life, 
-              she always made time for the class and made recordings whenever there wasn't section to help us on the labs. 
-              It was such a joy to be in her discussion. Her pace was very fast, but it was necessary to get through all the content, 
-              and she was always responsive to emails and was willing to meet outside of section and her office hours if needed. 
-              She never gave up on me if I had an issue, even if it was complicated. 
-              She was a bright energy in section which I think created a comforting environment for a subject 
-              that I was really worried I would struggle with."
-            </li>
-            <li>
-              "Yingqi was a great and well rounded TA. She really went above and beyond when it came to supporting us in doing labs. 
-              She is clearly very knowledgeable and is quick to address any concerns that I might have regarding R or material covered in lecture. 
-              I have nothing but praise for her as a TA. She was awesome and I would definitely take her section again if given the chance!"
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div>
-
-
-        
-      </article>
-        
-
-
-      <!-- 
-        - #COURSES 
-      -->
-            <article class="about" data-page="courses">
-        <header>
-          <h2 class="h2 article-title">Courses</h2>
-        </header>
-        <section class="about-text">
-        <p>
-          Here is a selected list of graduate-level classes I have completed that are relevant to my research:
-        </p>
-        </section>
-        <!--
-          - service
-        -->
-         <section class="service">
-          <h3 class="h3 service-title">Statistics @UCLA</h3>
-          <ul class="about-text">
-            <li>STATS 200A <i>Applied Probability</i> with Prof. Yingnian Wu</li>
-            <li>STATS 200B <i>Theoretical Statistics</i> with Prof. Arash Ali Amini</li>
-            <li>STATS 201A <i>Research Design, Sampling, and Analysis</i> with Prof. Hongquan Xu</li>
-            <li>STATS 201B <i>Modeling and Learning</i> with Prof. Chad Hazlett</li>
-            <li>STATS 201C <i>Advanced Modeling and Learning</i> with Prof. Qing Zhou</li>
-            <li>STATS 202A <i>Statistics Programming</i> with Prof. Frederic Paik Schoenberg</li>
-            <li>STATS 202B <i>Matrix Algebra and Optimization</i> with Prof. Mark S. Handcock</li>
-            <li>STATS 256 <i>Causality</i> with Prof. Chad Hazlett</li>
-            <li>STATS 211 <i>Topics in Economics and MAchine Learning</i> with Prof. Xiaowu Dai</li>
-            <li>STATS M231A <i>Pattern Recognition</i> with Prof. Yingnian Wu</li>
-          </ul>
-        </section>
-
-        <section class="service">
-          <h3 class="h3 service-title">Computer Science or Electrical and Computer Engineering @UCLA</h3>
-          <ul class="about-text">
-            <li>CS 269 <i>Reinforcement Learning</i> with Prof. Bolei Zhou</li>
-            <li>ECE 236A <i>Linear Programming</i> with Prof. Christina P Fragouli</li>
-          </ul>
-        </section>
-        
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div>
-
-
-        
-      </article>
-
-
+          <div class="testimonial">
+            <p>
+              “Ms. Gao is an excellent TA, and I greatly appreciate her. 
+              Without her, I would have struggled with the class and missed out on valuable training 
+              in statistical methods for real-world problems. 
+              Before the class, I was terrified of analyzing large datasets—now, I feel competent and inspired. 
+              I’m even considering a minor in statistics because of her. She deserves every raise available to TAs.”
+            </p>
+          </div>
+
+          <div class="testimonial">
+              <p>
+                “Yingqi is a fantastic programming and statistics TA. 
+                She was always considerate, providing extra resources, recordings, and after-class support. 
+                Her ability to simplify complex concepts made a huge difference. 
+                I would have struggled with the programming component of this class without her.”
+              </p>
+          </div>
+
+          <!-- Expandable Section for More Testimonials -->
+          <div id="more-feedback" style="display: none;">
+              <div class="testimonial">
+                <p>
+                  “Yingqi was exceptional in explaining concepts clearly and succinctly. 
+                  She went out of her way to connect lecture material to lab sessions and provided helpful resources for assignments.”
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <p>
+                  “Yingqi was very kind and passionate about the material. 
+                  She didn’t just answer questions but helped me understand why certain coding choices were made. 
+                  Even in small sections, she made discussions inviting and engaging.”
+                </p>
+            </div>
+          </div>
+          <!-- See More Button -->
+          <button id="toggle-feedback" class="custom-button">See More</button>
+
+      </section>
     </div>
 
-  </main>
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="assets/pdf/cv.pdf" class="nav-button" target="_blank">Resume</a>
+      <a href="#research" class="nav-link" data-section="research">Research</a>
+      <a href="#teaching" class="nav-link" data-section="teaching">Teaching</a>
+    </nav>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="assets/js/script.js"></script>
+    
 </body>
 
+
+
 </html>
+

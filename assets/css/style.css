@@ -14,7 +14,6 @@
 /*-----------------------------------*\
   #GLOBAL STYLES
 \*-----------------------------------*/
-
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -22,6 +21,7 @@ body {
   display: flex;
   background-color: white;
   color: black;
+  line-height: 1.4;
 }
 
 h1, h2, h3 {
@@ -186,11 +186,20 @@ ul li::before {
   text-align: center; /* Keeps it centered */
 }
 
-/* Email Section */
-.sidebar-email {
-  font-size: 14px;
-  color: #555;
-  text-align: center;
+/*-----------------------------------*\
+  #FOOTNOTE
+\*-----------------------------------*/
+.sidebar-footer {
+    width: 100%; /* Full width of sidebar */
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd; /* Optional divider */
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footnote-container {
+  display: none;
 }
 
 /*-----------------------------------*\
@@ -297,12 +306,52 @@ ul li::before {
     position: fixed;
     top: 0;
     display: flex;
-    align-items: center;
     justify-content: space-between; /* Pushes profile left & content right */
     padding: 10px 15px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    flex-direction: row; /* Makes it horizontal */
+    flex-direction: column;
     z-index: 1000;
+  }
+
+  .sidebar-top {
+    display: flex;
+    flex-direction: row; /* Makes it horizontal */
+    justify-content: center; /* Spaces columns */
+    align-items: center;
+  }
+
+  .sidebar-footer {
+    width: 100%; /* Ensures full width */
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    padding-top: 5px;
+    padding-bottom: 0;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 5px;
+  }
+
+  .footnote-container {
+    display: block;
+    text-align: right; /* Aligns the button to the right */
+    padding-right: 20px;
+    margin-top: 0;
+  }
+
+  .footnote-button {
+    background: none;
+    border: none;
+    color: var(--orange); /* Orange color like a link */
+    font-size: 12px; /* Small font size */
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline on hover */
+    padding: 0;
+    transition: color 0.3s ease;
+  }
+
+  .footnote-button:hover {
+    color: var(--carrot); /* Darker orange on hover */
   }
 
   /* Make profile picture stay on the left */
@@ -312,30 +361,39 @@ ul li::before {
     margin-right: 10px;
   }
 
-  /* Left Column: Profile Picture & Name */
-  .sidebar-left {
-    display: flex;
-    flex-direction: column; /* Stack picture and name */
-    align-items: center; /* Center align */
-  }
-
-  /* Right section (name, buttons, email) stays in a column */
-  .sidebar-right {
-    margin-right: 25px;
+  .profile-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;/* Align content to the right */
-    flex-grow: 1; /* Allows it to take up remaining space without overflow */
-  }
+    align-items: center;
+}
 
   .sidebar-title {
     display: none;
   }
 
   .sidebar-contact {
+    align-items: center;
+    width: fit-content;
     justify-content: space-between;
+    padding: 0 15px;
+    gap: auto;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .contact-label {
+    font-size: 12px; /* Adjust smaller size */
+  }
+
+  .contact-icon {
+    width: 18px; /* Reduce width */
+    height: 18px; /* Reduce height */
+  }
+
+  .contact-item {
+    width: 30px; /* Reduce button size */
+    height: 30px;
+    padding: 5px;
+}
 
   .bottom-nav {
     justify-content: space-evenly;
@@ -343,27 +401,12 @@ ul li::before {
 
   .main-content {
     margin-left: 0;
-    margin-top: 160px; /* Push content to the right to avoid overlap */
+    margin-top: 280px; /* Push content to the right to avoid overlap */
+    padding: 20px;
+    transition: margin-top 0.3s ease-in-out; /* Smooth transition */
     display: block;
     max-width: auto;
     overflow-y: auto; /* Allows scrolling if content is large */
-  }
-}
-
-
-@media screen and (max-width: 375px) {
-  /* Contact Section */
-  .sidebar-contact {
-    gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sidebar-email {
-    display: none;
-  }
-
-  .main-content {
-    margin-top: 200px;
   }
 }
 

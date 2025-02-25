@@ -13,12 +13,12 @@
 
 <body>
     <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="sidebar-left">
-        <img src="./assets/images/yqg.jpg" alt="Yingqi" class="profile-pic">
-        <div class="sidebar-name">Yingqi Gao</div>
-      </div>
-      <div class="sidebar-right">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="profile-column">
+          <img src="./assets/images/yqg.jpg" alt="Yingqi" class="profile-pic">
+          <div class="sidebar-name">Yingqi Gao</div>
+        </div>
         <div class="sidebar-title"> 
           Ph.D. Candidate,<br> 
           Statistics & Data Science,<br> 
@@ -55,15 +55,22 @@
               <p class="contact-label">Email</p>
           </div>
         </div>
-        <!-- Explicit Email for Copy-Pasting -->
-        <div class="sidebar-email">
-          <p>
-            If the email button does not work, copy:<br>
-            <strong>yqg36@ucla.edu</strong>
-          </p>
-        </div>
       </div>
-    </div>
+      <!-- Footnote Toggle Button -->
+      <div class="footnote-container">
+        <button id="toggle-footnote" class="footnote-button">Hide Footnote</button>
+      </div>
+      <!-- Footnote Section (Initially Hidden) -->
+      <footer class="sidebar-footer" id="footnote-section">
+        <p>
+          If the email button does not work, copy: <strong>yqg36@ucla.edu</strong>
+        </p>
+        <p>© 2025 Yingqi Gao. All Rights Reserved.</p>
+        <p>
+          <a href="https://www.flaticon.com/free-icons/github" title="icons credits">Icons created by Freepik - Flaticon</a>
+        </p>        
+      </footer>
+    </aside>
 
     <!-- Main Content -->
     <div class="main-content">
@@ -144,7 +151,7 @@
           —it involves statistically interpreting those sources to quantify the credibility of an answer. 
         </p>
         <p>
-          A related concept has been explored in <b>ad auctions</b>, 
+          A related concept has been explored in <b>ads auctions</b>, 
           where large language models incorporate bidding mechanisms to optimize AI-generated ad placement. 
           I aim to expand this idea by <b>introducing an economic interpretation of AI-generated value</b>, 
           ensuring that outcomes align with market incentives. For instance, if someone bids $100, 
@@ -160,7 +167,7 @@
           my work seeks to create AI-driven markets that are both <b>efficient and trustworthy</b>. 
           From (1) data markets to (2) privacy trading, 
           where users control their exposure instead of passively surrendering data,
-          to (3) LLM-powered ad auctions and (4) retrieval-based decision-making, 
+          to (3) LLM-powered ads auctions and (4) retrieval-based decision-making, 
           I strive to build systems that bridge AI intelligence with economic insight, 
           fostering <b>transparent, adaptable, and value-aligned AI interactions</b>.
         </p>
@@ -259,8 +266,6 @@
     <script src="assets/js/script.js"></script>
     
 </body>
-
-
 
 </html>
 

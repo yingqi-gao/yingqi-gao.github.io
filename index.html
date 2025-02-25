@@ -8,185 +8,280 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="sidebar-top">
-        <div class="profile-column">
-          <img src="./assets/images/yqg.jpg" alt="Yingqi" class="profile-pic">
-          <div class="sidebar-name">Yingqi Gao</div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/yqg.jpg" alt="Yingqi Gao">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yingqi Gao">Yingqi Gao</h1>
+
+          <p class="title">
+            Ph.D. Candidate<br> 
+            Statistics & Data Science<br> 
+            University of California,<br>
+            Los Angeles (UCLA)
+          </p>
         </div>
-        <div class="sidebar-title"> 
-          Ph.D. Candidate,<br> 
-          Statistics & Data Science,<br> 
-          University of California,<br>
-          Los Angeles (UCLA).
-        </div>
-        <!-- Contact Links -->
-        <div class="sidebar-contact">
-          <div>
-              <a href="assets/pdf/cv.pdf" target="_blank" class="contact-item">
-                <img src="assets/images/cv.png" alt="Resume" class="contact-icon">
-              </a>
-              <p class="contact-label">Resume</p>
-          </div>
-      
-          <div>
-              <a href="https://www.linkedin.com/in/yingqi-gao/" target="_blank" class="contact-item">
-                  <img src="assets/images/linkedin.png" alt="LinkedIn" class="contact-icon">
-              </a>
-              <p class="contact-label">LinkedIn</p>
-          </div>
-      
-          <div>
-              <a href="https://github.com/yingqi-gao" target="_blank" class="contact-item">
-                  <img src="assets/images/github.png" alt="GitHub" class="contact-icon">
-              </a>
-              <p class="contact-label">GitHub</p>
-          </div>
-      
-          <div>
-              <a href="mailto:yqg36@ucla.edu" class="contact-item">
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <a href="mailto:yqg36@ucla.edu">
+              <div class="icon-box">
                 <img src="assets/images/email.png" alt="Email" class="contact-icon">
-              </a>
-              <p class="contact-label">Email</p>
-          </div>
-        </div>
+              </div>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <p class="contact-link">yqg36@ucla.edu</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <a href="assets/pdf/cv.pdf" target="_blank">
+              <div class="icon-box">
+                <img src="assets/images/cv.png" alt="Resume" class="contact-icon">
+              </div>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">Resume</p>
+            </div>
+
+          </li>
+          <li class="contact-item">
+            <a href="https://www.linkedin.com/in/yingqi-gao/" target="_blank">
+              <div class="icon-box">
+                <img src="assets/images/linkedin.png" alt="LinkedIn" class="contact-icon">
+              </div>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <p class="contact-link">www.linkedin.com/in/yingqi-gao/</p>
+            </div>
+
+          </li>
+          <li class="contact-item">
+            <a href="https://github.com/yingqi-gao" target="_blank">
+              <div class="icon-box">
+                <img src="assets/images/github.png" alt="GitHub" class="contact-icon">
+              </div>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <p class="contact-link">github.com/yingqi-gao</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <footer class="sidebar-footer">
+          <p>© 2025 Yingqi Gao. All Rights Reserved.</p>
+          <p>
+            <a href="https://www.flaticon.com/free-icons/github" title="icons credits">Icons created by Freepik - Flaticon</a>
+          </p>        
+        </footer>
+
       </div>
-      <!-- Footnote Toggle Button -->
-      <div class="footnote-container">
-        <button id="toggle-footnote" class="footnote-button">Hide Footnote</button>
-      </div>
-      <!-- Footnote Section (Initially Hidden) -->
-      <footer class="sidebar-footer" id="footnote-section">
-        <p>
-          If the email button does not work, copy: <strong>yqg36@ucla.edu</strong>
-        </p>
-        <p>© 2025 Yingqi Gao. All Rights Reserved.</p>
-        <p>
-          <a href="https://www.flaticon.com/free-icons/github" title="icons credits">Icons created by Freepik - Flaticon</a>
-        </p>        
-      </footer>
+
     </aside>
 
-    <!-- Main Content -->
+    <!--
+      - #main-content
+    -->
+
     <div class="main-content">
 
-      <!-- About Me Section -->
-      <section id="about" class="content-section"> <!-- Default visible -->
-        <h2>About me</h2>
-        <div class="curly-divider"></div>
-        <p>
-          Hi, I am a fourth-year Ph.D. candidate in the 
-          <a href="http://statistics.ucla.edu/" class="link">Department of Statistics & Data Science</a> 
-          at <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. 
-          I am a member of the 
-          <a href="https://www.xiaowudai.org/group" class="link">
-            Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)
-          </a>
-          , advised by <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>.
-        </p>
+      <!--
+        - #NAVBAR
+      -->
 
-        <p>
-          Prior to my Ph.D., I earned two Bachelor of Science degrees in Probability & Statistics and Management Science 
-          at <a href="https://ucsd.edu/" class="link">University of California, San Diego (UCSD)</a>, 
-          as well as a Master of Arts in Statistics at 
-          <a href="https://www.columbia.edu/" class="link">Columbia University</a>, 
-          where I was advised by 
-          <a href="https://stat.columbia.edu/webpages/msobel/" class="link">Prof. Michael E. Sobel</a>.
-        </p>
+      <nav class="navbar">
 
-        <p>
-          My research lies at the <b>intersection of Machine Learning and Economics</b>, focusing on:<br>
-          (1) <b>Market-driven mechanisms</b> that enable intelligent decision-making and 
-          fair resource allocation <b>in digital economies</b>, such as <b>data markets and privacy trading</b>, 
-          giving users control over their data instead of passively surrendering it.<br>
-          (2) <b>AI systems that reason, adapt, and respond to economic incentives</b>, 
-          ensuring they operate efficiently in environments shaped by human behavior and strategic interactions,
-          like <b>LLM-powered ads auctions and retrieval-based uncertainty quantification</b>.
-        </p>
-        
-        <p>
-          My first name is pronounced as <i>Yee-ung-Chee</i>.
-        </p>
+        <ul class="navbar-list">
 
-        <div class="orange-divider"></div>
-        <h3>Grants</h3>
-        <ul class="about-text">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link onclick="location.href='assets/pdf/cv.pdf'">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Teaching</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Courses</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+          <div class="curly-divider"></div>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I am a fourth-year Ph.D. candidate in the 
+            <a href="http://statistics.ucla.edu/" class="link">Department of Statistics & Data Science</a> 
+            at <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. 
+            I am a member of the 
+            <a href="https://www.xiaowudai.org/group" class="link">
+              Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)
+            </a>
+            , advised by <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>.
+          </p>
+
+          <p>
+            Prior to my Ph.D., I earned two Bachelor of Science degrees in Probability & Statistics and Management Science 
+            at <a href="https://ucsd.edu/" class="link">University of California, San Diego (UCSD)</a>, 
+            as well as a Master of Arts in Statistics at 
+            <a href="https://www.columbia.edu/" class="link">Columbia University</a>, 
+            where I was advised by 
+            <a href="https://stat.columbia.edu/webpages/msobel/" class="link">Prof. Michael E. Sobel</a>.
+          </p>
+
+          <p>
+            My research lies at the <b>intersection of Machine Learning and Economics</b>, focusing on:<br>
+            (1) <b>Market-driven mechanisms</b> that enable intelligent decision-making and 
+            fair resource allocation <b>in digital economies</b>, such as <b>data markets and privacy trading</b>, 
+            giving users control over their data instead of passively surrendering it.<br>
+            (2) <b>AI systems that reason, adapt, and respond to economic incentives</b>, 
+            ensuring they operate efficiently in environments shaped by human behavior and strategic interactions,
+            like <b>LLM-powered ads auctions and retrieval-based uncertainty quantification</b>.
+          </p>
+          
+          <p>
+            My first name is pronounced as <i>Yee-ung-Chee</i>.
+          </p>
+
+          <div class="orange-divider"></div>
+          <h3>Grants</h3>
+          <ul>
+            <li>Division of Graduate Education Award Offer, UCLA, 2024</li>
             <li>Division of Graduate Education (DGE) Block Grant, UCLA, 2023</li>
             <li>Recipient of the Statistics Department Chair’s List of Academic Achievements, Columbia, 2020</li>
             <li>JSM 2020 Registration Award, Columbia, 2020</li>
             <li>BS magna cum laude in Management Science, UCSD, 2019</li>
           </ul>
-      </section>
+        </section>
+      </article>
 
-      <!-- Research Section -->
-      <section id="research" class="content-section" style="display: none;">
-        <h2>Research</h2>
-        <div class="curly-divider"></div>
-        <p>
-          My research explores the <b>two-way interaction between AI and economic systems</b>, 
-          focusing on (1) how AI can improve economic decision-making and 
-          (2) how economic principles can shape AI-driven markets. 
-        </p>
-        <p>
-          As digital assets like data, privacy, and AI-generated content become more valuable, 
-          traditional markets must adapt. I develop mechanisms that enable efficient trade while ensuring fairness, 
-          privacy, and strategic incentives. Currently, I am designing <b>fair yet profitable data marketplaces</b>, 
-          ensuring efficient trading mechanisms while aligning incentives for buyers and sellers. 
-          Looking ahead, I aim to develop <b>a privacy market</b> where users can dynamically control their 
-          data exposure—like turning a knob—balancing privacy protection with economic incentives. 
-        </p>
-        <p>
-          At the same time, I study how <b>AI can integrate economic reasoning to make better decisions
-          under uncertainty</b>.
-          For example, retrieval-based AI can improve predictive reliability by drawing on external knowledge. 
-          In <b>healthcare</b>, this could mean retrieving past diagnoses made by human professionals 
-          from similar cases to assess uncertainty in a new diagnosis, ensuring AI-generated recommendations 
-          are not only data-driven but also grounded in real-world medical expertise. 
-          Similarly, in <b>AI-powered chatbots</b>, this goes beyond simply listing the sources
-          —it involves statistically interpreting those sources to quantify the credibility of an answer. 
-        </p>
-        <p>
-          A related concept has been explored in <b>ads auctions</b>, 
-          where large language models incorporate bidding mechanisms to optimize AI-generated ad placement. 
-          I aim to expand this idea by <b>introducing an economic interpretation of AI-generated value</b>, 
-          ensuring that outcomes align with market incentives. For instance, if someone bids $100, 
-          the AI-generated ad should deliver at least proportionally greater value compared to a $10 bid. 
-          Embedding this principle enhances fairness, reinforces incentives, and strengthens trust in AI-driven markets.
-        </p>
-        <p>
-          Ultimately, I seek to build <b>scalable, inference-driven AI systems</b> that go 
-          beyond processing information to <b>actively reason, adapt, and make economically sound decisions</b>
-          in complex marketplaces shaped by human behavior and strategic interactions.
-          By integrating <b>statistical reasoning to assess uncertainty</b> and 
-          <b>economic principles to ensure fairness and incentives</b>, 
-          my work seeks to create AI-driven markets that are both <b>efficient and trustworthy</b>. 
-          From (1) data markets to (2) privacy trading, 
-          where users control their exposure instead of passively surrendering data,
-          to (3) LLM-powered ads auctions and (4) retrieval-based decision-making, 
-          I strive to build systems that bridge AI intelligence with economic insight, 
-          fostering <b>transparent, adaptable, and value-aligned AI interactions</b>.
-        </p>
-      </section>
+      <article class="about" data-page="research">
+        <header>
+          <h2 class="h2 article-title">Research</h2>
+          <div class="curly-divider"></div>
+        </header>
 
-      
+        <section class="about-text">
+          <p>
+            My research explores the <b>two-way interaction between AI and economic systems</b>, 
+            focusing on (1) how AI can improve economic decision-making and 
+            (2) how economic principles can shape AI-driven markets. 
+          </p>
+          <p>
+            As digital assets like data, privacy, and AI-generated content become more valuable, 
+            traditional markets must adapt. I develop mechanisms that enable efficient trade while ensuring fairness, 
+            privacy, and strategic incentives. Currently, I am designing <b>fair yet profitable data marketplaces</b>, 
+            ensuring efficient trading mechanisms while aligning incentives for buyers and sellers. 
+            Looking ahead, I aim to develop <b>a privacy market</b> where users can dynamically control their 
+            data exposure—like turning a knob—balancing privacy protection with economic incentives. 
+          </p>
+          <p>
+            At the same time, I study how <b>AI can integrate economic reasoning to make better decisions
+            under uncertainty</b>.
+            For example, retrieval-based AI can improve predictive reliability by drawing on external knowledge. 
+            In <b>healthcare</b>, this could mean retrieving past diagnoses made by human professionals 
+            from similar cases to assess uncertainty in a new diagnosis, ensuring AI-generated recommendations 
+            are not only data-driven but also grounded in real-world medical expertise. 
+            Similarly, in <b>AI-powered chatbots</b>, this goes beyond simply listing the sources
+            —it involves statistically interpreting those sources to quantify the credibility of an answer. 
+          </p>
+          <p>
+            A related concept has been explored in <b>ads auctions</b>, 
+            where large language models incorporate bidding mechanisms to optimize AI-generated ad placement. 
+            I aim to expand this idea by <b>introducing an economic interpretation of AI-generated value</b>, 
+            ensuring that outcomes align with market incentives. For instance, if someone bids $100, 
+            the AI-generated ad should deliver at least proportionally greater value compared to a $10 bid. 
+            Embedding this principle enhances fairness, reinforces incentives, and strengthens trust in AI-driven markets.
+          </p>
+          <p>
+            Ultimately, I seek to build <b>scalable, inference-driven AI systems</b> that go 
+            beyond processing information to <b>actively reason, adapt, and make economically sound decisions</b>
+            in complex marketplaces shaped by human behavior and strategic interactions.
+            By integrating <b>statistical reasoning to assess uncertainty</b> and 
+            <b>economic principles to ensure fairness and incentives</b>, 
+            my work seeks to create AI-driven markets that are both <b>efficient and trustworthy</b>. 
+            From (1) data markets to (2) privacy trading, 
+            where users control their exposure instead of passively surrendering data,
+            to (3) LLM-powered ads auctions and (4) retrieval-based decision-making, 
+            I strive to build systems that bridge AI intelligence with economic insight, 
+            fostering <b>transparent, adaptable, and value-aligned AI interactions</b>.
+          </p>
+        </section>
+      </article>
 
-      <section id="grants" class="content-section" style="display: none;">
-        <h2>Grants</h2>
-        <div class="curly-divider"></div>
-        <p>Funding sources for my research...</p>
-      </section>
-    
-      
+      <article class="about" data-page="teaching">
+        <header>
+          <h2 class="h2 article-title">Teaching</h2>
+          <div class="curly-divider"></div>
+        </header>
 
-      <section id="teaching" class="content-section" style="display: none;">
-        <h2>Teaching</h2>
-        <div class="curly-divider"></div>
-        <h3>Courses TA'd</h3>
+        <section class="about-text">
+          <h3>Courses TA'd</h3>
           <h4>📍 UCLA</h4>
           <ul>
               <li><b>STATS 102B</b> – <i>Introduction to Computation and Optimization for Statistics</i> (Summer 2024)</li>
@@ -201,8 +296,8 @@
           <ul>
               <li><b>STAT S1201</b> – <i>Calculus-Based Introduction to Statistics</i> (Summer 2021)</li>
           </ul>
-        <div class="orange-divider"></div>
-        <h3>What Students Say</h3>
+          <div class="orange-divider"></div>
+          <h3>What Students Say</h3>
           <!-- Featured Testimonials -->
           <div class="testimonial">
             <p>
@@ -250,20 +345,66 @@
             </div>
           </div>
           <!-- See More Button -->
-          <button id="toggle-feedback" class="custom-button">See More</button>
+          <button id="toggle-feedback" class="custom-button" >See More</button>
+          </section>
+      </article>
 
-      </section>
-    </div>
+      <!-- 
+        - #COURSES 
+      -->
+      <article class="about" data-page="courses">
+        <header>
+          <h2 class="h2 article-title">Courses</h2>
+          <div class="curly-divider"></div>
+        </header>
+        <section class="about-text">
+        <p>
+          Here is a selected list of graduate-level classes I have completed that are relevant to my research:
+        </p>
+        </section>
+        <!--
+          - service
+        -->
+         <section class="service">
+          <h3 class="h3 service-title">Statistics @UCLA</h3>
+          <ul class="about-text">
+            <li>STATS 200A <i>Applied Probability</i> with Prof. Yingnian Wu</li>
+            <li>STATS 200B <i>Theoretical Statistics</i> with Prof. Arash Ali Amini</li>
+            <li>STATS 201A <i>Research Design, Sampling, and Analysis</i> with Prof. Hongquan Xu</li>
+            <li>STATS 201B <i>Modeling and Learning</i> with Prof. Chad Hazlett</li>
+            <li>STATS 201C <i>Advanced Modeling and Learning</i> with Prof. Qing Zhou</li>
+            <li>STATS 202A <i>Statistics Programming</i> with Prof. Frederic Paik Schoenberg</li>
+            <li>STATS 202B <i>Matrix Algebra and Optimization</i> with Prof. Mark S. Handcock</li>
+            <li>STATS 256 <i>Causality</i> with Prof. Chad Hazlett</li>
+            <li>STATS 211 <i>Topics in Economics and MAchine Learning</i> with Prof. Xiaowu Dai</li>
+            <li>STATS M231A <i>Pattern Recognition</i> with Prof. Yingnian Wu</li>
+          </ul>
+        </section>
 
-    <!-- Bottom Navigation Bar -->
-    <nav class="bottom-nav">
-      <a href="#about" class="nav-link" data-section="about">About</a>
-      <a href="assets/pdf/cv.pdf" class="nav-button" target="_blank">Resume</a>
-      <a href="#research" class="nav-link" data-section="research">Research</a>
-      <a href="#teaching" class="nav-link" data-section="teaching">Teaching</a>
-    </nav>
+        <section class="service">
+          <h3 class="h3 service-title">Computer Science or Electrical and Computer Engineering @UCLA</h3>
+          <ul class="about-text">
+            <li>CS 269 <i>Reinforcement Learning</i> with Prof. Bolei Zhou</li>
+            <li>ECE 236A <i>Linear Programming</i> with Prof. Christina P Fragouli</li>
+          </ul>
+        </section>
+        </section>
+      </article>
 
-    <script src="assets/js/script.js"></script>
+
+
+
+      <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     
 </body>
 

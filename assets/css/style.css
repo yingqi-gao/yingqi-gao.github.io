@@ -466,7 +466,6 @@
   }
   
   .contact-title {
-    color: var(--smoky-black);
     font-size: var(--fs-8);
     text-transform: uppercase;
     margin-bottom: 2px;
@@ -1737,8 +1736,8 @@
     }
 
     .icon-box {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       border-radius: 12px;
       font-size: 18px;
     }

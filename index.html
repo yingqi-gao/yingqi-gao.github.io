@@ -4,7 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yingqi's Portfolio</title>
+  <meta name="description" content="Yingqi Gao - Ph.D. Candidate in Statistics & Data Science at UCLA. Research at the intersection of Machine Learning and Economics, focusing on data markets, privacy trading, and AI-driven economic systems.">
+  <meta name="keywords" content="Yingqi Gao, UCLA, Statistics, Data Science, Machine Learning, Economics, AI, Data Markets, Privacy Trading, PhD Candidate">
+  <meta name="author" content="Yingqi Gao">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yingqi-gao.github.io/">
+  <meta property="og:title" content="Yingqi Gao - Ph.D. Candidate at UCLA">
+  <meta property="og:description" content="Research at the intersection of Machine Learning and Economics, focusing on data markets, privacy trading, and AI-driven economic systems.">
+  <meta property="og:image" content="https://yingqi-gao.github.io/assets/images/yqg.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yingqi-gao.github.io/">
+  <meta property="twitter:title" content="Yingqi Gao - Ph.D. Candidate at UCLA">
+  <meta property="twitter:description" content="Research at the intersection of Machine Learning and Economics, focusing on data markets, privacy trading, and AI-driven economic systems.">
+  <meta property="twitter:image" content="https://yingqi-gao.github.io/assets/images/yqg.jpg">
+
+  <title>Yingqi Gao - Ph.D. Candidate at UCLA</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,35 +31,65 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+
+    <button class="navbar-toggle" data-navbar-toggle aria-label="Toggle navigation menu" aria-expanded="false">
+      <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+      <ion-icon name="close-outline" class="close-icon"></ion-icon>
+    </button>
+
+    <ul class="navbar-list" data-navbar-list>
+
+      <li class="navbar-item">
+        <button class="navbar-link active" data-nav-link aria-label="About me section">About</button>
+      </li>
+
+      <li class="navbar-item">
+        <a href="assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="navbar-link" aria-label="View resume PDF (opens in new tab)">Resume</a>
+      </li>
+
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link aria-label="Research section">Research</button>
+      </li>
+
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link aria-label="Teaching section">Teaching</button>
+      </li>
+
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link aria-label="Courses section">Courses</button>
+      </li>
+
+    </ul>
+
+  </nav>
 
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- Sidebar -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/yqg.jpg" alt="Yingqi Gao">
+          <img src="./assets/images/yqg.jpg" alt="Yingqi Gao" loading="eager">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Yingqi Gao">Yingqi Gao</h1>
 
-          <p class="title">
-            Ph.D. Candidate<br> 
-            Statistics & Data Science<br> 
+          <p class="title title-desktop">
+            Ph.D. Candidate<br>
+            Statistics & Data Science<br>
             University of California,<br>
             Los Angeles (UCLA)
           </p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" data-sidebar-btn aria-label="Toggle contact information" aria-expanded="false">
           <span>Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
@@ -53,43 +101,50 @@
 
         <div class="separator"></div>
 
+        <p class="title title-mobile">
+          Ph.D. Candidate<br>
+          Statistics & Data Science<br>
+          University of California,<br>
+          Los Angeles (UCLA)
+        </p>
+
         <ul class="contacts-list">
 
           <li class="contact-item">
             <div class="icon-box">
-              <img src="assets/images/email.png" alt="Email" class="contact-icon">
+              <img src="assets/images/email.png" alt="Email icon" class="contact-icon" loading="lazy">
             </div>
             <div class="contact-info">
-              <a href="mailto:yingqi.gao.stats@gmail.com" class="contact-title">Email</a>
+              <a href="mailto:yingqi.gao.stats@gmail.com" class="contact-title" aria-label="Send email to yingqi.gao.stats@gmail.com">Email</a>
               <p class="contact-link">yingqi.gao.stats@gmail.com</p>
             </div>
           </li>
 
           <li class="contact-item">
             <div class="icon-box">
-              <img src="assets/images/cv.png" alt="Resume" class="contact-icon">
+              <img src="assets/images/cv.png" alt="Resume icon" class="contact-icon" loading="lazy">
             </div>
             <div class="contact-info">
-              <a href="assets/pdf/resume.pdf" target="_blank" class="contact-title">Resume</a>
+              <a href="assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-title" aria-label="Download resume PDF (opens in new tab)">Resume</a>
             </div>
           </li>
 
           <li class="contact-item">
             <div class="icon-box">
-              <img src="assets/images/linkedin.png" alt="LinkedIn" class="contact-icon">
+              <img src="assets/images/linkedin.png" alt="LinkedIn icon" class="contact-icon" loading="lazy">
             </div>
             <div class="contact-info">
-              <a href="https://www.linkedin.com/in/yingqi-gao/" target="_blank" class="contact-title">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/yingqi-gao/" target="_blank" rel="noopener noreferrer" class="contact-title" aria-label="Visit LinkedIn profile (opens in new tab)">LinkedIn</a>
               <p class="contact-link">yingqi-gao</p>
             </div>
           </li>
 
           <li class="contact-item">
             <div class="icon-box">
-              <img src="assets/images/github.png" alt="GitHub" class="contact-icon">
+              <img src="assets/images/github.png" alt="GitHub icon" class="contact-icon" loading="lazy">
             </div>
             <div class="contact-info">
-              <a href="https://github.com/yingqi-gao" target="_blank" class="contact-title">GitHub</a>
+              <a href="https://github.com/yingqi-gao" target="_blank" rel="noopener noreferrer" class="contact-title" aria-label="Visit GitHub profile (opens in new tab)">GitHub</a>
               <p class="contact-link">yingqi-gao</p>
             </div>
           </li>
@@ -109,48 +164,10 @@
 
     </aside>
 
-    <!--
-      - #main-content
-    -->
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
 
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link onclick="location.href='assets/pdf/resume.pdf'">Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Research</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Teaching</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Courses</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
+      <!-- About Section -->
       <article class="about active" data-page="about">
 
         <header>
@@ -160,33 +177,38 @@
 
         <section class="about-text">
           <p>
-            Hi, I am a fourth-year Ph.D. candidate in the 
+            Hi, I’m a fifth-year Ph.D. candidate in the 
             <a href="http://statistics.ucla.edu/" class="link">Department of Statistics & Data Science</a> 
-            at <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. 
+            at the <a href="https://www.ucla.edu/" class="link">University of California, Los Angeles (UCLA)</a>. 
             I am a member of the 
             <a href="https://www.xiaowudai.org/group" class="link">
-              Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)
-            </a>
-            , advised by <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>.
+            Lab for Statistics, Computing, Algorithms, Learning, and Economics (SCALE)
+            </a>,
+            where I am advised by 
+            <a href="https://www.xiaowudai.org/" class="link">Prof. Xiaowu Dai</a>.
           </p>
 
           <p>
-            Prior to my Ph.D., I earned two Bachelor of Science degrees in Probability & Statistics and Management Science 
-            at <a href="https://ucsd.edu/" class="link">University of California, San Diego (UCSD)</a>, 
-            as well as a Master of Arts in Statistics at 
+            Prior to my Ph.D., I earned dual Bachelor of Science degrees in Probability & Statistics and Management Science 
+            from the <a href="https://ucsd.edu/" class="link">University of California, San Diego (UCSD)</a>, 
+            and a Master of Arts in Statistics from 
             <a href="https://www.columbia.edu/" class="link">Columbia University</a>, 
             where I was advised by 
             <a href="https://stat.columbia.edu/webpages/msobel/" class="link">Prof. Michael E. Sobel</a>.
           </p>
 
           <p>
-            My research lies at the <b>intersection of Machine Learning and Economics</b>, focusing on:<br>
-            (1) <b>Market-driven mechanisms</b> that enable intelligent decision-making and 
-            fair resource allocation <b>in digital economies</b>, such as <b>data markets and privacy trading</b>, 
-            giving users control over their data instead of passively surrendering it.<br>
-            (2) <b>AI systems that reason, adapt, and respond to economic incentives</b>, 
-            ensuring they operate efficiently in environments shaped by human behavior and strategic interactions,
-            like <b>LLM-powered ads auctions and retrieval-based uncertainty quantification</b>.
+            My research lies at the intersection of <b>Machine Learning, Causal Inference, and Economics</b>. In particular,
+          </p>
+          <p>
+            (1) <b>Market-driven mechanisms</b> that enable intelligent decision-making and efficient resources allocation 
+            in <b>AI markets</b>, which coordinate the pricing, exchange, and utilization of 
+            <b>data, ML models, and APIs (such as LLM services)</b>.
+          </p>
+          <p>
+            (2) <b>Next-generation AI systems</b> where autonomous <b>agents</b> learn and reason 
+            through causal and economic principles to achieve <b>stable, adaptive, and intelligent</b> collective behavior.
+            Ensure efficient operations in environments shaped heavily by human behavior and strategic interactions.
           </p>
           
           <p>
@@ -194,18 +216,6 @@
           </p>
         </section>
 
-        <div class="orange-divider"></div>
-
-        <section class="service">
-          <h3 class="h3 service-title">Grants</h3>
-          <ul class="service-list">
-            <li>Division of Graduate Education Award, UCLA, 2023, 2024</li>
-            <li>Recipient of the Statistics Department Chair’s List of Academic Achievements, Columbia, 2020</li>
-            <li>JSM 2020 Registration Award, Columbia, 2020</li>
-            <li>BS magna cum laude in Management Science, UCSD, 2019</li>
-          </ul>
-        </section>
-      
       </article>
 
       <article class="about" data-page="research">
@@ -217,47 +227,60 @@
         <section class="about-text">
           <p>
             My research explores the <b>two-way interaction between AI and economic systems</b>, 
-            focusing on (1) how AI can improve economic decision-making and 
-            (2) how economic principles can shape AI-driven markets. 
+            studying how AI can enhance economic decision-making and 
+            how economic principles can guide the design of intelligent, adaptive AI systems.
           </p>
+
+          <div class="research-focus">
+            <p>
+              <span class="research-highlight">Learning-Based Mechanisms for AI Economies</span>
+              As digital assets—such as <b>data, privacy, APIs, and AI-generated content</b>—gain economic significance,
+              markets must learn to price, trade, and utilzie them smartly and efficiently. 
+              I design <b>profit-aware, data-efficient, incentive-aligned mechanisms</b>, such as<br>
+              <span class="research-highlight">(1) AI-driven digital marketplaces</span> 
+              that learn buyer values over time and attain optimal revenue faster, and<br> 
+              <span class="research-highlight">(2) Incentive-aligned privacy markets</span> 
+              where users, instead of being forced to surrender their privacy, 
+              can decide to whom and to what extent to share their data in exchange for economic rewards.
+            </p>
+          </div>
+          
+          <div class="research-focus">
+            <p>
+              <span class="research-highlight">AI Systems with Economic and Statistical Reasoning</span>
+              I study how <b>AI systems can integrate causal and economic reasoning</b> 
+              to make interpretable, uncertainty-aware decisions, including
+              <span class="research-highlight">(1) Prediction-powered uncertainty quantification</span> 
+              that leverages foundation models to construct prediction intervals using inexpensive model-generated data, 
+              reducing reliance on costly real-world observations, and<br> 
+              <span class="research-highlight">(2) Retrieval-augmented LLMs</span> 
+              that not only retrieve relevant information but also reveal how responses are generated, 
+              identify which resources to rely on, and rank results by their reliability.<br> 
+              By embedding statistical inference within adaptive learning,
+              my work enables <b>AI systems that quantify uncertainty and act strategically</b> 
+              under limited or evolving information.
+            </p>
+          </div>
+
+          <div class="research-focus">
+            <p>
+              <span class="research-highlight">Economic Alignment in Generative and Agentic AI</span>
+              I explore how <b>large language models (LLMs) and agentic AI systems</b> 
+              can interact through <b>economic incentives</b> to align behavior and value creation. 
+              Building on insights from <b>auction and market design</b>, 
+              I investigate mechanisms that link bids, rewards, and generated outcomes—ensuring
+              that AI-generated content or actions reflect proportional economic value. 
+              This economic interpretation strengthens fairness, trust, and transparency
+              in AI-driven environments such as <b>recommendation and advertising systems</b>.
+            </p>
+          </div>
+
           <p>
-            As digital assets like data, privacy, and AI-generated content become more valuable, 
-            traditional markets must adapt. I develop mechanisms that enable efficient trade while ensuring fairness, 
-            privacy, and strategic incentives. Currently, I am designing <b>fair yet profitable data marketplaces</b>, 
-            ensuring efficient trading mechanisms while aligning incentives for buyers and sellers. 
-            Looking ahead, I aim to develop <b>a privacy market</b> where users can dynamically control their 
-            data exposure—like turning a knob—balancing privacy protection with economic incentives. 
-          </p>
-          <p>
-            At the same time, I study how <b>AI can integrate economic reasoning to make better decisions
-            under uncertainty</b>.
-            For example, retrieval-based AI can improve predictive reliability by drawing on external knowledge. 
-            In <b>healthcare</b>, this could mean retrieving past diagnoses made by human professionals 
-            from similar cases to assess uncertainty in a new diagnosis, ensuring AI-generated recommendations 
-            are not only data-driven but also grounded in real-world medical expertise. 
-            Similarly, in <b>AI-powered chatbots</b>, this goes beyond simply listing the sources
-            —it involves statistically interpreting those sources to quantify the credibility of an answer. 
-          </p>
-          <p>
-            A related concept has been explored in <b>ads auctions</b>, 
-            where large language models incorporate bidding mechanisms to optimize AI-generated ad placement. 
-            I aim to expand this idea by <b>introducing an economic interpretation of AI-generated value</b>, 
-            ensuring that outcomes align with market incentives. For instance, if someone bids $100, 
-            the AI-generated ad should deliver at least proportionally greater value compared to a $10 bid. 
-            Embedding this principle enhances fairness, reinforces incentives, and strengthens trust in AI-driven markets.
-          </p>
-          <p>
-            Ultimately, I seek to build <b>scalable, inference-driven AI systems</b> that go 
-            beyond processing information to <b>actively reason, adapt, and make economically sound decisions</b>
-            in complex marketplaces shaped by human behavior and strategic interactions.
-            By integrating <b>statistical reasoning to assess uncertainty</b> and 
-            <b>economic principles to ensure fairness and incentives</b>, 
-            my work seeks to create AI-driven markets that are both <b>efficient and trustworthy</b>. 
-            From (1) data markets to (2) privacy trading, 
-            where users control their exposure instead of passively surrendering data,
-            to (3) LLM-powered ads auctions and (4) retrieval-based decision-making, 
-            I strive to build systems that bridge AI intelligence with economic insight, 
-            fostering <b>transparent, adaptable, and value-aligned AI interactions</b>.
+            Ultimately, I aim to build <b>economically intelligent, inference-driven AI systems</b> 
+            that not only learn from data but also <b>reason, adapt, and coordinate through incentives</b>. 
+            By integrating <b>causal inference</b> for uncertainty quantification and 
+            <b>mechanism design principles</b> for incentive alignment, 
+            my research bridges machine learning and economics to create <b>scalable, value-aligned AI ecosystems</b>.
           </p>
         </section>
       </article>
@@ -268,22 +291,29 @@
           <div class="curly-divider"></div>
         </header>
 
-        <section class="service">
+        <section class="about-text">
           <h3 class="h3 service-title">Courses TA'd</h3>
-          <h4>📍 UCLA</h4>
-          <ul class="service-list">
-              <li>STATS 102B <i>Introduction to Computation and Optimization for Statistics</i></li>
-              <li>STATS 102A <i>Introduction to Computational Statistics with R</i></li>
-              <li>STATS 100A <i>Introduction to Probability</i></li>
-              <li>STATS 20 <i>Introduction to Statistical Programming with R</i></li>
-              <li>STATS 13 <i>Introduction to Statistical Methods for Life and Health Sciences</i></li>
-              <li>STATS 10 <i>Introduction to Statistical Reasoning</i></li>
-          </ul>
+          <p>
+            📍 <b>UCLA</b><br>
+            • STATS 102B<br>
+            <i>Introduction to Computation and Optimization for Statistics</i><br>
+            • STATS 102A<br>
+            <i>Introduction to Computational Statistics with R</i><br>
+            • STATS 100A<br>
+            <i>Introduction to Probability</i><br>
+            • STATS 20<br>
+            <i>Introduction to Statistical Programming with R</i><br>
+            • STATS 13<br>
+            <i>Introduction to Statistical Methods for Life and Health Sciences</i><br>
+            • STATS 10<br>
+            <i>Introduction to Statistical Reasoning</i>
+          </p>
 
-          <h4>📍 Columbia University</h4>
-          <ul class="service-list">
-              <li>STAT S1201 <i>Calculus-Based Introduction to Statistics</i></li>
-          </ul>
+          <p>
+            📍 <b>Columbia University</b><br>
+            • STAT S1201<br>
+            <i>Calculus-Based Introduction to Statistics</i>
+          </p>
         </section>
           
         <div class="orange-divider"></div>
@@ -340,9 +370,7 @@
         </section>
       </article>
 
-      <!-- 
-        - #COURSES 
-      -->
+      <!-- Courses Section -->
       <article class="about" data-page="courses">
         <header>
           <h2 class="h2 article-title">Courses</h2>
@@ -353,51 +381,55 @@
             Here is a selected list of graduate-level classes I have completed that are relevant to my research:
           </p>
         </section>
-        <!--
-          - service
-        -->
-         <section class="service">
+
+        <section class="about-text">
           <h3 class="h3 service-title">Statistics @UCLA</h3>
-          <ul class="service-list">
-            <li>STATS 200A <i>Applied Probability</i> with Prof. Yingnian Wu</li>
-            <li>STATS 200B <i>Theoretical Statistics</i> with Prof. Arash Ali Amini</li>
-            <li>STATS 201A <i>Research Design, Sampling, and Analysis</i> with Prof. Hongquan Xu</li>
-            <li>STATS 201B <i>Modeling and Learning</i> with Prof. Chad Hazlett</li>
-            <li>STATS 201C <i>Advanced Modeling and Learning</i> with Prof. Qing Zhou</li>
-            <li>STATS 202A <i>Statistics Programming</i> with Prof. Frederic Paik Schoenberg</li>
-            <li>STATS 202B <i>Matrix Algebra and Optimization</i> with Prof. Mark S. Handcock</li>
-            <li>STATS 256 <i>Causality</i> with Prof. Chad Hazlett</li>
-            <li>STATS 211 <i>Topics in Economics and MAchine Learning</i> with Prof. Xiaowu Dai</li>
-            <li>STATS M231A <i>Pattern Recognition</i> with Prof. Yingnian Wu</li>
-          </ul>
+          <p>
+            • STATS 200A<br>
+            <i>Applied Probability</i> with Prof. Yingnian Wu<br>
+            • STATS 200B<br>
+            <i>Theoretical Statistics</i> with Prof. Arash Ali Amini<br>
+            • STATS 201A<br>
+            <i>Research Design, Sampling, and Analysis</i> with Prof. Hongquan Xu<br>
+            • STATS 201B<br>
+            <i>Modeling and Learning</i> with Prof. Chad Hazlett<br>
+            • STATS 201C<br>
+            <i>Advanced Modeling and Learning</i> with Prof. Qing Zhou<br>
+            • STATS 202A<br>
+            <i>Statistics Programming</i> with Prof. Frederic Paik Schoenberg<br>
+            • STATS 202B<br>
+            <i>Matrix Algebra and Optimization</i> with Prof. Mark S. Handcock<br>
+            • STATS 256<br>
+            <i>Causality</i> with Prof. Chad Hazlett<br>
+            • STATS 211<br>
+            <i>Topics in Economics and Machine Learning</i> with Prof. Xiaowu Dai<br>
+            • STATS M231A<br>
+            <i>Pattern Recognition</i> with Prof. Yingnian Wu
+          </p>
         </section>
 
-        <section class="service">
+        <section class="about-text">
           <h3 class="h3 service-title">Computer Science or Electrical and Computer Engineering @UCLA</h3>
-          <ul class="service-list">
-            <li>CS 269 <i>Reinforcement Learning</i> with Prof. Bolei Zhou</li>
-            <li>ECE 236A <i>Linear Programming</i> with Prof. Christina P Fragouli</li>
-          </ul>
-        </section>
+          <p>
+            • CS 269<br>
+            <i>Reinforcement Learning</i> with Prof. Bolei Zhou<br>
+            • ECE 236A<br>
+            <i>Linear Programming</i> with Prof. Christina P Fragouli
+          </p>
         </section>
       </article>
 
+    </div>
+    <!-- End main-content -->
 
+  </main>
+  <!-- End main -->
 
-
-      <!--
-    - custom js link
-  -->
+  <!-- Scripts -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    
 </body>
-
 </html>
 

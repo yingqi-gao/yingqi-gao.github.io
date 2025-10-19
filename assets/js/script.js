@@ -8,6 +8,37 @@ console.log("✅ JavaScript is running from assets/js/script.js!");
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
+// Navbar toggle for mobile
+const navbarToggle = document.querySelector("[data-navbar-toggle]");
+const navbarList = document.querySelector("[data-navbar-list]");
+
+if (navbarToggle && navbarList) {
+  navbarToggle.addEventListener("click", function () {
+    elementToggleFunc(navbarToggle);
+    elementToggleFunc(navbarList);
+
+    // Update aria-expanded attribute
+    const isExpanded = navbarList.classList.contains("active");
+    navbarToggle.setAttribute("aria-expanded", isExpanded);
+
+    // Remove focus to reset button appearance
+    this.blur();
+  });
+
+  // Close mobile menu when a nav link is clicked
+  const navbarLinks = document.querySelectorAll("[data-nav-link]");
+  navbarLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      if (navbarList.classList.contains("active")) {
+        elementToggleFunc(navbarToggle);
+        elementToggleFunc(navbarList);
+        navbarToggle.setAttribute("aria-expanded", false);
+      }
+    });
+  });
+}
+
+
 
 // Sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
